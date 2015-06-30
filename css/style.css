@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+
+html, body, #main, #map{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    position: relative;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/*---- Shadowbox --------------------*/
+header, #menumap{
+    box-shadow: 0px 0px 2px black;
+}
+
+
+/*----------- Header ------------------------------------------------------------------------------------------------------------*/
+
+header {
+    background-color: #673AB7;
+    padding: 5px 10px;
+    position: relative;
+}
+
+header a {
+    padding: 10px;
+}
+
+header nav li, header nav ul  {
+    display: inline-block;
+}
+
+header nav{
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header nav .sous-menu {
+    display: none;
+}
+
+header img {
+    width: 200px;
+    vertical-align: middle;
+}
+
+/*-------  Contenu -----------------------------------------------------------------------------------------------------------------------------------*/
+
+#content{
+    height: 90%;
+}
+
+
+/*--------------MEnu map--------------------------------------------------------------------------------------------------------------------------------------*/
+
+#mapcontent #menumap{
+    padding: 5px;
+}
+
+
+#mapcontent #menumap li{
+    display: inline-block;
+}
+
+#mapcontent #menumap li a{
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
+
+/*------------- Map ----------------------------------------------------------------------------------------------------------------------*/
+#mapcontent{
+    display: inline-block;
+    width: 80%;
+    height: 98%;
+    background-color: crimson;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+#mapcontent .leaflet-container {
+	background: white;
+}
+
+
+/*------------- Right contenu ----------------------------------------------------------------------------------------------------------------------*/
+
+#rightcontent{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    margin-right: -5%;
+    min-width: 185px;
+}
+
+
+
+
+@media all and (max-width: 740px){
+    #mapcontent, #rightcontent{
+        display: block;
+        width: 100%;
+    }
+}
